@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Prompt&family=Roboto&display=swap');
+
+* {
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+    
+}
+
+body {
+    background-image: url(/page/image/bg-202301.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.custom-card {
+    background-color: rgb(255 255 255 / 0%);
+    color: #ffffff;
+    border: none;
+  }
+.custom-card img{
+    border-radius: 2em;
+}
+.container-fluid img{
+    width: 50px;
+    margin-right: 10px;
+    
+}
+.container-fluid img{
+    width: 50px;
+    margin-right: 10px;
+}
