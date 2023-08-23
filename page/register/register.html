@@ -13,30 +13,30 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <img src="../image/cheers.png">
-      <a class="navbar-brand" href="#">Restaurant Booking</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../landing/landing.html">หน้าหลัก</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">จองโต๊ะ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../login/memberLogin.html">เมมเบอร์</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../map/map.html">แผนที่</a>
-          </li>
-        </ul>
-      </div>
+        <img src="../image/cheers.png">
+        <a class="navbar-brand" href="#">Restaurant Booking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../landing/landing.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../booking/booking.html">จองโต๊ะ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login/memberLogin.html">เมมเบอร์</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../map/map.html">แผนที่</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -44,7 +44,7 @@
             ลงทะเบียน
           </div>
           <div class="card-body">
-            <form>
+            <div>
               <div class="mb-3">
                 <label for="username" class="form-label">เบอร์โทรศัพท์มือถือ</label>
                 <input type="number" class="form-control" id="phonenumber" name="phonenumber" required>
@@ -73,13 +73,13 @@
                 เป็นสมาชิกอยู่แล้ว
                 <button class="btn-link">เข้าสู่ระบบ</button>
               </div>
-              <button type="submit" class="btn btn-primary">ลงทะเบียน</button>
-            </form>
+              <button onclick="submitData()" class="btn btn-primary ">ลงทะเบียน</button>
+            </div>
           </div>
       </div>
     </div>
   </div>
-
+  <script src="register.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
