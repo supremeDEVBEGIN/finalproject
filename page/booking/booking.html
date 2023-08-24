@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <img src="../image/cheers.png">
-            <a class="navbar-brand" href="#">Restaurant Booking</a>
+            <div class="navbar-brand">Restaurant Booking</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,43 +44,153 @@
                     จองโต๊ะ
                 </div>
                 <div class="card-body">
-                    <img src="/finalproject/page/image/table.jpg" alt="">
+                    <img src="../image/table.jpg" alt="">
                     <div>
+                        <div class="movie-container">
+                            <select id="movie">
+                            </select>
+                        </div>
+
+                        <ul class="showcase">
+                            <li>
+                                <div class="seat"></div>
+                                <small>โต๊ะที่ถูกจอง</small>
+                            </li>
+                            <li>
+                                <div class="seat selected"></div>
+                                <small>โต๊ะที่เลือก</small>
+                            </li>
+                            <li>
+                                <div class="seat booking"></div>
+                                <small>โต๊ะที่ว่าง</small>
+                            </li>
+                        </ul>
+                        <div class="containerTable">
+
+                            <div class="row">
+                                <div class="seat">A1</div>
+                                <div class="seat">A2</div>
+                                <div class="seat">A3</div>
+                                <div class="seat">A4</div>
+                                <div class="seat">A5</div>
+                                <div class="seat">A6</div>
+                                <div class="seat">A7</div>
+                                <div class="seat">A8</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="seat">A9</div>
+                                <div class="seat">A10</div>
+                                <div class="seat">A11</div>
+                                <div class="seat">A12</div>
+                                <div class="seat">A13</div>
+                                <div class="seat">A14</div>
+                                <div class="seat">A15</div>
+                                <div class="seat">A16</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat">A17</div>
+                                <div class="seat">A18</div>
+                                <div class="seat">A19</div>
+                                <div class="seat">A20</div>
+                                <div class="seat">A21</div>
+                                <div class="seat">A22</div>
+                                <div class="seat">A23</div>
+                                <div class="seat">A24</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat">B1</div>
+                                <div class="seat">B2</div>
+                                <div class="seat">B3</div>
+                                <div class="seat">B4</div>
+                                <div class="seat">B5</div>
+                                <div class="seat">B6</div>
+                                <div class="seat">B7</div>
+                                <div class="seat">B8</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat">B9</div>
+                                <div class="seat">B10</div>
+                                <div class="seat">B11</div>
+                                <div class="seat">B12</div>
+                                <div class="seat">B13</div>
+                                <div class="seat">B14</div>
+                                <div class="seat">B15</div>
+                                <div class="seat">B16</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat">B17</div>
+                                <div class="seat">B18</div>
+                                <div class="seat">B19</div>
+                                <div class="seat">B20</div>
+                                <div class="seat">B21</div>
+                                <div class="seat">B22</div>
+                                <div class="seat">B23</div>
+                                <div class="seat">B24</div>
+                            </div>
+                            <p class="text">
+                                คุณได้เลือก <span id="count">0</span> โต๊ะ.
+                            </p>
+                            <p>รบกวนทางร้านขอสงวนสิทธิ์ให้ลูกค้ามาเอาโต๊ะ ก่อนเวลา 21:00 น. </p>
+                        </div>
                         <div class="mb-3">
-                            <label  class="form-label">ชื่อผู้จอง</label>
-                            <input type="text" class="form-control" name="userMember" required
-                                placeholder="ชื่อผู้จอง">
+                            <label class="form-label">ชื่อผู้จอง</label>
+                            <input type="text" class="form-control" name="userMember" required placeholder="ชื่อผู้จอง">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">เบอร์โทรศัพท์</label>
-                            <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" required placeholder="เบอร์โทรศัพท์">
+                            <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" required
+                                placeholder="เบอร์โทรศัพท์">
                             <p id="errorText" style="color: red;"></p>
-                        </div>                    
-                        <div class="mb-3">
-                            <label  class="form-label">วันที่จอง</label>
-                            <input type="text" class="form-control" name="date" required placeholder="วันที่จอง">
                         </div>
                         <div class="mb-3">
+                            <label class="form-label">วันที่จอง</label>
+                            <input type="text" class="form-control" name="date" required placeholder="วันที่จอง">
+                        </div>
+                        <!-- <div class="mb-3">
                             <label  class="form-label">โซน</label>
                             <select class="form-select" name="zone">
                                 <option selected>โซน</option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
                                 <option value="C">C</option>
-                              </select>
-                        </div>
-                        <div class="mb-3">
-                            <label  class="form-label">จำนวนคน</label>
-                            <input type="number" class="form-control" name="people" required placeholder="จำนวนคน">
-                        </div>
-                        <button onclick="submitData()" class="btn btn-primary">จอง</button>
+                              </select> -->
                     </div>
+                    <div class="mb-3">
+                        <label class="form-label">จำนวนคน</label>
+                        <input type="number" class="form-control" name="people" required placeholder="จำนวนคน">
+                    </div>
+                    <button onclick="submitData()" class="btn btn-primary">จอง</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="booking.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function submitData() {
+        Swal.fire({
+            title: 'ยืนยันการจองโต๊ะ',
+            text: 'คุณต้องการยืนยันการจองโต๊ะหรือไม่?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'ยืนยัน',
+            cancelButtonText: 'ยกเลิก'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'ยืนยันสำเร็จ!',
+                    'การจองโต๊ะของคุณได้รับการยืนยันแล้ว',
+                    'success'
+                );
+                // ทำการส่งข้อมูลการจองไปยังเซิร์ฟเวอร์หรือทำอย่างอื่นตามที่คุณต้องการ
+            }
+        });
+    }
+</script>
 </body>
 
 </html>

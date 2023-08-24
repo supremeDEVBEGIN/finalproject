@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <img src="../image/cheers.png">
-        <a class="navbar-brand" href="#">Restaurant Booking</a>
+        <div class="navbar-brand" >Restaurant Booking</div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,31 +47,31 @@
             <div>
               <div class="mb-3">
                 <label for="username" class="form-label">เบอร์โทรศัพท์มือถือ</label>
-                <input type="number" class="form-control" id="phonenumber" name="phonenumber" required>
+                <input type="number" class="form-control" id="phonenumber" name="phonenumber" required placeholder="เบอร์โทรศัพท์มือถือ">
               </div>
               <div class="mb-3">
                 <label for="username" class="form-label">ชื่อจริง</label>
-                <input type="text" class="form-control" id="firstname" name="firstname" required>
+                <input type="text" class="form-control" id="firstname" name="firstname" required placeholder="ชื่อจริง">
               </div>
               <div class="mb-3">
                 <label for="username" class="form-label">ชื่อผู้ใช้งาน</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+                <input type="text" class="form-control" id="username" name="username" required placeholder="ชื่อผู้ใช้งาน">
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">อีเมล</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="อีเมล">
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label">รหัสผ่าน</label>
-                <input type="password" class="form-control" id="password" name="password" required>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="รหัสผ่าน">
               </div>
               <div class="mb-3">
                 <label for="confirmPassword" class="form-label">ยืนยันรหัสผ่าน</label>
-                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required placeholder="ยืนยันรหัสผ่าน">
               </div>
               <div class="mb-3">
                 เป็นสมาชิกอยู่แล้ว
-                <button class="btn-link">เข้าสู่ระบบ</button>
+                <button class="btn-link" onclick="goToLogin()">เข้าสู่ระบบ</button>
               </div>
               <button onclick="submitData()" class="btn btn-primary ">ลงทะเบียน</button>
             </div>
@@ -80,6 +80,7 @@
     </div>
   </div>
   <script src="register.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
