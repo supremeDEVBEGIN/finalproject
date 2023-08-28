@@ -44,7 +44,7 @@ function submitData() {
         Swal.fire({
             icon: 'success',
             title: 'สมัครสมาชิกเสร็จสิ้น',
-            text: 'คุณได้เข้าสู่ระบบสมาชิกแล้ว',
+            text: 'คุณได้สมัครสมาชิกเรียบร้อยแล้วกรุณาเข้าสู่ระบบ',
             confirmButtonText: 'ตกลง'
         });
     } else {
